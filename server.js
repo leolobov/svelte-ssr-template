@@ -17,11 +17,14 @@ server.get('*', function(req, res) {
     <!DOCTYPE html>
     <head>
     ${head}
-    </head>
     <link rel='stylesheet' href='static/global.min.css'>
     <link rel='stylesheet' href='static/bundle.css'>
+    </head>
+    <body>
     <div id="app">${html}</div>
     <script src="static/bundle.js"></script>
+    </body>
+    </html>
   `);
 
   res.end();
